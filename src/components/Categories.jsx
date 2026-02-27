@@ -14,7 +14,7 @@ const Categories = () => {
             <h2 className='text-3xl font-bold text-center mb-12'>
                 Shop by Category
             </h2>
-            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6'>
+            <div className='grid grid-cols-2 md:grid-cols-4 gap-6'>
                 {categories.map((cat, index) => (
                     <Link
                         key={index}
@@ -24,7 +24,7 @@ const Categories = () => {
                         <img
                             src={cat.image}
                             alt={cat.name}
-                            className='h-60 w-full object-cover group-hover:scale-110 transition duration-500' />
+                            className='h-32 sm:h-40 md:h-56 w-full object-cover group-hover:scale-110 transition duration-500' />
                         <div className='absolute inset-0 bg-black/40 flex items-center justify-center'>
                             <h2 className='text-xl text-white font-semibold'>
                                 {cat.name}

@@ -25,17 +25,17 @@ const Product = () => {
         <img
           src={product.image}
           alt={product.title}
-          className='h-96 w-full object-contain'
+          className='h-64 sm:h-80 md:h-96 w-full object-contain'
         />
       </div>
 
       <div>
 
-        <h1 className='mt-3 md:mt-4 font-semibold text-gray-700 text-sm sm:text-base md:text-lg truncate'>
+        <h1 className='mt-3 md:mt-4 font-semibold text-gray-800 text-lg md:text-2xl truncate'>
           {product.title}
         </h1>
 
-        <p className='mt-2 text-base sm:text-lg md:text-xl font-bold text-black'>
+        <p className='mt-3 text-sm sm:text-base font-bold text-gray-600'>
           ${product.description}
         </p>
         <p className='mt-2 text-base sm:text-lg md:text-xl font-bold text-black'>
@@ -49,7 +49,7 @@ const Product = () => {
           setAdded(true);
           setTimeout(() => setAdded(false), 1500)
         }}
-          className='mt- md:mt-4 w-full bg-black text-white  py-3 sm:py-3.5 md:py-4 text-sm sm:text-base rounded-lg hover:bg-gray-800transition'>
+          className='mt-6 w-full bg-black text-white  py-3 text-sm sm:text-base rounded-lg hover:bg-gray-800 transition'>
           Add to Cart
         </button>
 

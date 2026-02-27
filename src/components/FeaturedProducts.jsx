@@ -12,12 +12,12 @@ const FeaturedProducts = () => {
     }, []);
 
     return (
-        <section className='max-w-7xl mx-auto py-6 px-16 bg-gray-400 mt-8'>
+        <section className='max-w-7xl mx-auto py-10 px-4 sm:px-6 lg:px-8 bg-gray-400 mt-8'>
             <h2 className='text-3xl font-bold text-center mb-10'>
                 Featured Products
             </h2>
 
-            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8'>
+            <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8'>
                 {products.map((product) => (
                     <ProductCard key={product.id} product={product} />
                 ))}
